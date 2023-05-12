@@ -17,7 +17,7 @@ class Server {
     this.middlewares();
 
     //routes
-    this.routes();
+    // this.routes();
 
     // Sockets
     this.sockets()
@@ -33,9 +33,9 @@ class Server {
   }
 
   // routes
-  routes() {
-    // this.app.use(this.paths.usuarios, usuariosRoutes)
-  }
+  // routes() {
+  //   // this.app.use(this.paths.usuarios, usuariosRoutes)
+  // }
 
   sockets() {
     this.io.on('connection', socketController)
